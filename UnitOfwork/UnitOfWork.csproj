@@ -78,9 +78,6 @@
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="PDFCreation">
-      <HintPath>..\PDFCreation\bin\Debug\PDFCreation.dll</HintPath>
-    </Reference>
     <Reference Include="RestClient, Version=2.4.1.8, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\RestClient.2.4.1.8\lib\net451\RestClient.dll</HintPath>
     </Reference>
@@ -149,6 +146,10 @@
     <ProjectReference Include="..\FacilitiesUserManagement\FacilitiesUserManagement.csproj">
       <Project>{99df6263-3a67-44bd-8a64-82b719a1a0b0}</Project>
       <Name>FacilitiesUserManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PDFCreation\PDFCreation.csproj">
+      <Project>{c7e1dee0-2ba9-4668-b49c-33ef20664347}</Project>
+      <Name>PDFCreation</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
