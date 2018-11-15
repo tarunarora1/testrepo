@@ -57,10 +57,6 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DataModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DataModel\bin\Debug\DataModel.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -97,6 +93,12 @@
     <Compile Include="BusinessEntityClasses\WorkOrderEntity.cs" />
     <Compile Include="BusinessEntityClasses\WorkOrderNotesEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataModel\DataModel.csproj">
+      <Project>{e8f8fd41-ffd8-4f2c-ab4a-e30aa12b6bc4}</Project>
+      <Name>DataModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
