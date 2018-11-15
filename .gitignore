@@ -12,3 +12,4 @@ PublishProfiles
 applicationhost.config
 *.dbmdl
 *.csproj.user
+packages

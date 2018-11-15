@@ -57,9 +57,9 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DataModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="BussinessEntities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DataModel\bin\Debug\DataModel.dll</HintPath>
+      <HintPath>..\BussinessEntities\bin\Debug\BussinessEntities.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -147,9 +147,9 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BussinessEntities\BusinessEntities.csproj">
-      <Project>{C3527352-542D-424E-BDFD-33D43B48BCAC}</Project>
-      <Name>BusinessEntities</Name>
+    <ProjectReference Include="..\DataModel\DataModel.csproj">
+      <Project>{e8f8fd41-ffd8-4f2c-ab4a-e30aa12b6bc4}</Project>
+      <Name>DataModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

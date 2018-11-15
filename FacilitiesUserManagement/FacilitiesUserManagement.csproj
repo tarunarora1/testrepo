@@ -31,7 +31,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DataModel">
+    <Reference Include="BussinessEntities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BussinessEntities\bin\Debug\BussinessEntities.dll</HintPath>
+    </Reference>
+    <Reference Include="DataModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DataModel\bin\Debug\DataModel.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework">
@@ -62,12 +67,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BussinessEntities\BusinessEntities.csproj">
-      <Project>{c3527352-542d-424e-bdfd-33d43b48bcac}</Project>
-      <Name>BusinessEntities</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
