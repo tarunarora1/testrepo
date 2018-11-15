@@ -1,0 +1,14 @@
+/api
+FacilitiesServices/obj/**/**/*
+/**/.vs
+/FacilitiesServices/bin
+/**/obj
+/FacilitiesServices/obj/Release
+*.user
+*.user
+bin
+obj
+PublishProfiles
+applicationhost.config
+*.dbmdl
+*.csproj.user

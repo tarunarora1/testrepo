@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E8F8FD41-FFD8-4F2C-AB4A-E30AA12B6BC4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataModel</RootNamespace>
+    <AssemblyName>DataModel</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Dev|AnyCPU'">
+    <OutputPath>bin\Dev\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+    <OutputPath>bin\Test\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Prod|AnyCPU'">
+    <OutputPath>bin\Prod\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CGSAction.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CGSColumn.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CGSColumnType.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CGSDateTimeUnit.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CGSFileType.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CGSInterval.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CGSLinkDetail.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CGSLinkHeader.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CGSSRAction.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CGSTheme.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CGSThemeTemplate.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CGSThemeTemplateLogo.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CGSThemeTemplateType.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Client.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientActionStatus.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientAttachmentType.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientClassOfGood.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientCustomer.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientInsuranceType.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientPMHeader.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientProblemClass.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientProblemCode.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientResourceDetail.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientResourceHeader.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientServiceRequestAction.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientServiceRequestActionStatus.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientServiceRequestNoteType.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientServiceRequestPriority.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientServiceRequestStatus.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientServiceType.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientUser.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientVendor.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientVendorInsurance.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientVendorProblemClass.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientWorkOrderAction.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientWorkOrderNoteType.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerLocation.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerLocationUser.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerResourceDetail.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerResourceHeader.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerUser.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Facilities.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Facilities.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Facilities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Facilities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Facilities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="fn_getClientResourceData_Result.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetCustomerEmailAddressForInvoiceQuote_Result.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetCustomerLocationUsers_Result.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceRequestIvoiceQuoteCount_Result.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceRequestsForLocationUser_Result.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetServiceRequests_Result.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Get_serviceandworkorderattachmentdata_Result.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Get_ServiceQuoteUserStatusGridData_Result.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Get_ServiceWorkOrderNoteGridData_Result.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceStatus.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LinkDetail.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LinkHeader.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PMTestTable.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PMVendor.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PMVendorCustomerLocation.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PMWorkOrderCreationDate.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prc_createNumberNew_Result.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prc_createNumber_Result.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prc_createWorkOrderNumber_Result.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prc_GetAttachment_Result.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prc_GetCustomerLocationsForUser_Result.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prc_GetInvoiceServiceData_Result.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prc_GetPMConfirmationData_Result.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prc_GetPMModuleDetails_Result.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prc_GetPMWorkOrder_Result.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prc_GetServiceInvoiceDetailsDataWithWorkOrder_Result.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prc_GetServiceInvoiceServiceDetailsData_Result.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="prc_GetWorkOrderVendorInvoiceData_Result.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceTypeDetail.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceTypeHeader.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Role.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RoleGroup.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequest.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequestAction.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequestAttachment.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequestInvoiceAction.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequestInvoiceDetail.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequestInvoiceHeader.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequestInvoiceHeader2VendorInvoice.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequestInvoiceHeaderApiResponse.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequestNote.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SiteContent.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Status.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Vendor.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VendorUser.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrder.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrderAction.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrderAttachment.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrderNote.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrderVendorInvoiceDetail.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrderVendorInvoiceHeader.cs">
+      <DependentUpon>Facilities.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="Facilities.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Facilities.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Facilities.edmx.diagram">
+      <DependentUpon>Facilities.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Facilities.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Facilities.edmx</DependentUpon>
+      <LastGenOutput>Facilities.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Facilities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Facilities.edmx</DependentUpon>
+      <LastGenOutput>Facilities.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

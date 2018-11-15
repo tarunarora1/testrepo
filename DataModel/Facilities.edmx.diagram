@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="116133f0348e40fa9392f4b9d5b7f6ec" Name="Diagram1" ZoomLevel="72">
+        <EntityTypeShape EntityType="FacilitiesModel.CGSFileType" Width="1.5" PointX="3.75" PointY="21.5" />
+        <EntityTypeShape EntityType="FacilitiesModel.ClientCustomer" Width="1.5" PointX="6" PointY="12.125" />
+        <EntityTypeShape EntityType="FacilitiesModel.ClientProblemClass" Width="1.5" PointX="3" PointY="34.25" />
+        <EntityTypeShape EntityType="FacilitiesModel.ClientProblemCode" Width="1.5" PointX="5.25" PointY="24.625" />
+        <EntityTypeShape EntityType="FacilitiesModel.ClientResourceDetail" Width="1.5" PointX="8.25" PointY="20" />
+        <EntityTypeShape EntityType="FacilitiesModel.ClientResourceHeader" Width="1.5" PointX="6" PointY="19.875" />
+        <EntityTypeShape EntityType="FacilitiesModel.ClientServiceRequestPriority" Width="1.5" PointX="3" PointY="14.5" />
+        <EntityTypeShape EntityType="FacilitiesModel.ClientServiceRequestStatus" Width="1.5" PointX="3" PointY="31" />
+        <EntityTypeShape EntityType="FacilitiesModel.ClientUser" Width="1.5" PointX="3" PointY="17.875" />
+        <EntityTypeShape EntityType="FacilitiesModel.ClientVendor" Width="1.5" PointX="6" PointY="15.625" />
+        <EntityTypeShape EntityType="FacilitiesModel.CustomerLocation" Width="1.5" PointX="5.25" PointY="34.625" />
+        <EntityTypeShape EntityType="FacilitiesModel.CustomerLocationUser" Width="1.5" PointX="11.25" PointY="17.875" />
+        <EntityTypeShape EntityType="FacilitiesModel.CustomerResourceDetail" Width="1.5" PointX="13.25" PointY="21.375" />
+        <EntityTypeShape EntityType="FacilitiesModel.CustomerResourceHeader" Width="1.5" PointX="6" PointY="3.5" />
+        <EntityTypeShape EntityType="FacilitiesModel.Customer" Width="1.5" PointX="3.75" PointY="10.75" />
+        <EntityTypeShape EntityType="FacilitiesModel.CustomerUser" Width="1.5" PointX="11.25" PointY="14.25" />
+        <EntityTypeShape EntityType="FacilitiesModel.ResourceTypeDetail" Width="1.5" PointX="6" PointY="30.75" />
+        <EntityTypeShape EntityType="FacilitiesModel.ResourceTypeHeader" Width="1.5" PointX="3.75" PointY="2" />
+        <EntityTypeShape EntityType="FacilitiesModel.RoleGroup" Width="1.5" PointX="1.5" PointY="11.25" />
+        <EntityTypeShape EntityType="FacilitiesModel.Role" Width="1.5" PointX="0.75" PointY="20.75" />
+        <EntityTypeShape EntityType="FacilitiesModel.SiteContent" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="FacilitiesModel.Status" Width="1.5" PointX="3" PointY="27.875" />
+        <EntityTypeShape EntityType="FacilitiesModel.Vendor" Width="1.5" PointX="3.75" PointY="5.625" />
+        <EntityTypeShape EntityType="FacilitiesModel.VendorUser" Width="1.5" PointX="8.25" PointY="11.375" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientVen__FileT__35D2D7FA" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientCus__Clien__77D5A581" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientCus__Custo__78C9C9BA" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientPro__Clien__34749F6D" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientRes__Clien__4F92A9FD" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientRes__Resou__5086CE36" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientRes__Resou__4BC21919" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientUser__Role__2F25DA6B" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientVen__Vendo__34DEB3C1" />
+        <AssociationConnector Association="FacilitiesModel.FK__CustomerL__Custo__296D0115" />
+        <AssociationConnector Association="FacilitiesModel.FK__CustomerL__Custo__7C9A5A9E" />
+        <AssociationConnector Association="FacilitiesModel.FK__CustomerR__Custo__46FD63FC" />
+        <AssociationConnector Association="FacilitiesModel.FK__CustomerR__Resou__47F18835" />
+        <AssociationConnector Association="FacilitiesModel.FK__CustomerR__Custo__4420F751" />
+        <AssociationConnector Association="FacilitiesModel.FK__CustomerR__Resou__432CD318" />
+        <AssociationConnector Association="FacilitiesModel.FK__CustomerU__Custo__23B427BF" />
+        <AssociationConnector Association="FacilitiesModel.FK__CustomerUs__Role__24A84BF8" />
+        <AssociationConnector Association="FacilitiesModel.FK__ResourceT__Resou__3F5C4234" />
+        <AssociationConnector Association="FacilitiesModel.FK__Roles__RoleGroup__1FE396DB" />
+        <AssociationConnector Association="FacilitiesModel.FK_Roles_VendorUsers" />
+        <AssociationConnector Association="FacilitiesModel.FK_Vendors_VendorUsers" />
+        <EntityTypeShape EntityType="FacilitiesModel.ClientInsuranceType" Width="1.5" PointX="3" PointY="38.25" />
+        <EntityTypeShape EntityType="FacilitiesModel.ClientVendorInsurance" Width="1.5" PointX="10.25" PointY="24" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientVen__Insur__605321AB" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientVen__Clien__5E6AD939" />
+        <EntityTypeShape EntityType="FacilitiesModel.ClientVendorProblemClass" Width="1.5" PointX="10.25" PointY="29.25" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientVen__Probl__6423B28F" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientVen__Clien__632F8E56" />
+        <EntityTypeShape EntityType="FacilitiesModel.ClientServiceType" Width="1.5" PointX="3.375" PointY="41.5" />
+        <EntityTypeShape EntityType="FacilitiesModel.ClientWorkOrderNoteType" Width="1.5" PointX="3.375" PointY="45.125" />
+        <EntityTypeShape EntityType="FacilitiesModel.WorkOrderAttachment" Width="1.5" PointX="16.375" PointY="13.625" />
+        <EntityTypeShape EntityType="FacilitiesModel.WorkOrderNote" Width="1.5" PointX="16.375" PointY="26" />
+        <AssociationConnector Association="FacilitiesModel.FK__WorkOrder__WorkO__7DE38492" />
+        <AssociationConnector Association="FacilitiesModel.FK__WorkOrder__WorkO__745A1A58" />
+        <EntityTypeShape EntityType="FacilitiesModel.ClientClassOfGood" Width="1.5" PointX="3" PointY="24.875" />
+        <EntityTypeShape EntityType="FacilitiesModel.WorkOrderVendorInvoiceDetail" Width="1.5" PointX="18.25" PointY="9" />
+        <AssociationConnector Association="FacilitiesModel.FK__WorkOrder__FileT__0A495B77" />
+        <EntityTypeShape EntityType="FacilitiesModel.ClientWorkOrderAction" Width="1.5" PointX="8.625" PointY="32.375" />
+        <EntityTypeShape EntityType="FacilitiesModel.WorkOrderAction" Width="1.5" PointX="19" PointY="12.875" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientWor__Defau__38102627" />
+        <AssociationConnector Association="FacilitiesModel.FK__WorkOrder__Actio__3DC8FF7D" />
+        <EntityTypeShape EntityType="FacilitiesModel.CGSAction" Width="1.5" PointX="8.375" PointY="0.875" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientWor__CGSAc__456A2145" />
+        <EntityTypeShape EntityType="FacilitiesModel.ClientActionStatus" Width="1.5" PointX="10.625" PointY="10.5" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientAct__CGSAc__493AB229" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientAct__Statu__4A2ED662" />
+        <EntityTypeShape EntityType="FacilitiesModel.ClientAttachmentType" Width="1.5" PointX="14.125" PointY="4.5" />
+        <AssociationConnector Association="FacilitiesModel.FK__WorkOrder__WorkO__0955373E" />
+        <EntityTypeShape EntityType="FacilitiesModel.ServiceRequestAttachment" Width="1.5" PointX="16.375" PointY="18.75" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__FileT__597119F2" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__WorkO__5B596264" />
+        <EntityTypeShape EntityType="FacilitiesModel.ServiceRequestInvoiceDetail" Width="1.5" PointX="15" PointY="30.875" />
+        <EntityTypeShape EntityType="FacilitiesModel.ServiceRequestInvoiceHeader2VendorInvoice" Width="1.5" PointX="21.25" PointY="9.5" />
+        <EntityTypeShape EntityType="FacilitiesModel.WorkOrderVendorInvoiceHeader" Width="1.5" PointX="16" PointY="8.375" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Vendo__69A781BB" />
+        <AssociationConnector Association="FacilitiesModel.FK__WorkOrder__Vendo__1D5C2FEB" />
+        <AssociationConnector Association="FacilitiesModel.FK__WorkOrder__Vendo__212CC0CF" />
+        <EntityTypeShape EntityType="FacilitiesModel.ClientServiceRequestActionStatus" Width="1.5" PointX="8.25" PointY="36.5" />
+        <EntityTypeShape EntityType="FacilitiesModel.InvoiceStatus" Width="1.5" PointX="3" PointY="49.25" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientSer__Invoi__054F9C30" />
+        <EntityTypeShape EntityType="FacilitiesModel.ServiceRequest" Width="1.5" PointX="17.25" PointY="31.25" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Clien__478773E1" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Clien__487B981A" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Clien__496FBC53" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Clien__4A63E08C" />
+        <AssociationConnector Association="FacilitiesModel.FK_ServiceRequests_ClientServiceTypes" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Custo__46934FA8" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Custo__44AB0736" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Custo__459F2B6F" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Servi__5A653E2B" />
+        <EntityTypeShape EntityType="FacilitiesModel.CGSSRAction" Width="1.5" PointX="11" PointY="7.375" />
+        <EntityTypeShape EntityType="FacilitiesModel.ClientServiceRequestAction" Width="1.5" PointX="13.25" PointY="8.375" />
+        <EntityTypeShape EntityType="FacilitiesModel.ClientServiceRequestNoteType" Width="1.5" PointX="3" PointY="53.375" />
+        <EntityTypeShape EntityType="FacilitiesModel.ServiceRequestAction" Width="1.5" PointX="19.5" PointY="21.875" />
+        <EntityTypeShape EntityType="FacilitiesModel.ServiceRequestNote" Width="1.5" PointX="19.5" PointY="30.125" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientSer__CGSSR__0CF0BDF8" />
+        <AssociationConnector Association="FacilitiesModel.FK__CGSServic__Defau__0737E4A2" />
+        <AssociationConnector Association="FacilitiesModel.FK__CGSServic__RoleG__008AE713" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientSer__CGSSe__036753BE" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Servi__139DBB87" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Servi__23D42350" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Servi__1491DFC0" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Servi__22DFFF17" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientSer__Defau__25BC6BC2" />
+        <EntityTypeShape EntityType="FacilitiesModel.WorkOrder" Width="1.5" PointX="22.5" PointY="17.875" />
+        <AssociationConnector Association="FacilitiesModel.FK__WorkOrder__Servi__53ED4AC6" />
+        <AssociationConnector Association="FacilitiesModel.FK__WorkOrder__Statu__55D59338" />
+        <AssociationConnector Association="FacilitiesModel.FK__WorkOrder__Vendo__54E16EFF" />
+        <AssociationConnector Association="FacilitiesModel.FK__WorkOrder__WorkO__3CD4DB44" />
+        <AssociationConnector Association="FacilitiesModel.FK__WorkOrder__WorkO__08611305" />
+        <AssociationConnector Association="FacilitiesModel.FK__WorkOrder__WorkO__7271D1E6" />
+        <AssociationConnector Association="FacilitiesModel.FK__WorkOrder__WorkO__1C680BB2" />
+        <EntityTypeShape EntityType="FacilitiesModel.ServiceRequestInvoiceHeader" Width="1.5" PointX="22.5" PointY="25.625" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Custo__63EEA865" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Invoi__082C08DB" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Servi__6C83EE66" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Servi__64E2CC9E" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Servi__68B35D82" />
+        <EntityTypeShape EntityType="FacilitiesModel.ServiceRequestInvoiceAction" Width="1.5" PointX="24.75" PointY="21.75" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Servi__37DB1BFD" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Servi__38CF4036" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Servi__3AB788A8" />
+        <EntityTypeShape EntityType="FacilitiesModel.ServiceRequestInvoiceHeaderApiResponse" Width="1.5" PointX="24.75" PointY="27.125" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Servi__49F9CC38" />
+        <EntityTypeShape EntityType="FacilitiesModel.CGSDateTimeUnit" Width="1.5" PointX="0.75" PointY="25.375" />
+        <EntityTypeShape EntityType="FacilitiesModel.LinkHeader" Width="1.5" PointX="3" PointY="58.25" />
+        <EntityTypeShape EntityType="FacilitiesModel.CGSLinkDetail" Width="1.5" PointX="5.25" PointY="62.125" />
+        <EntityTypeShape EntityType="FacilitiesModel.CGSLinkHeader" Width="1.5" PointX="3" PointY="61.75" />
+        <AssociationConnector Association="FacilitiesModel.FK__CGSLinkHe__CGSDa__64CE895C" />
+        <AssociationConnector Association="FacilitiesModel.FK__CGSLinkDe__CGSLi__67AAF607" />
+        <AssociationConnector Association="FacilitiesModel.FK__LinkHeade__CGSLi__6A8762B2" />
+        <EntityTypeShape EntityType="FacilitiesModel.User" Width="1.5" PointX="0.75" PointY="19.875" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientUser__User__0293F66D" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientVen__Uploa__05706318" />
+        <AssociationConnector Association="FacilitiesModel.FK__CustomerLo__User__10E215C4" />
+        <AssociationConnector Association="FacilitiesModel.FK__CustomerUs__User__178F1353" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceReq__User__1F30351B" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceReq__User__20245954" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceReq__User__24E90E71" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceReq__User__28B99F55" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceReq__User__2E7278AB" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceReq__User__351F763A" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Creat__3AD84F90" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__LastU__3EA8E074" />
+        <AssociationConnector Association="FacilitiesModel.FK__WorkOrder__Creat__50C790AF" />
+        <AssociationConnector Association="FacilitiesModel.FK__WorkOrder__LastU__51BBB4E8" />
+        <AssociationConnector Association="FacilitiesModel.FK__WorkOrderA__User__464A023C" />
+        <AssociationConnector Association="FacilitiesModel.FK__WorkOrderA__User__4B0EB759" />
+        <AssociationConnector Association="FacilitiesModel.FK__WorkOrderN__User__4EDF483D" />
+        <AssociationConnector Association="FacilitiesModel.FK__WorkOrderV__User__595CD6B0" />
+        <AssociationConnector Association="FacilitiesModel.FK_Users_VendorUsers" />
+        <EntityTypeShape EntityType="FacilitiesModel.LinkDetail" Width="1.5" PointX="7.5" PointY="60.25" />
+        <AssociationConnector Association="FacilitiesModel.FK__LinkDetai__CGSLi__7228847A" />
+        <AssociationConnector Association="FacilitiesModel.FK__LinkDetai__CGSLi__71346041" />
+        <AssociationConnector Association="FacilitiesModel.FK__LinkDetai__LinkH__731CA8B3" />
+        <EntityTypeShape EntityType="FacilitiesModel.CGSInterval" Width="1.5" PointX="0.75" PointY="5.75" />
+        <AssociationConnector Association="FacilitiesModel.FK_LinkHeaders_LinkHeaders" />
+        <EntityTypeShape EntityType="FacilitiesModel.PMVendor" Width="1.5" PointX="13.75" PointY="16" />
+        <AssociationConnector Association="FacilitiesModel.FK__PMVendors__Vendo__184E2D62" />
+        <EntityTypeShape EntityType="FacilitiesModel.PMVendorCustomerLocation" Width="1.5" PointX="19" PointY="26.375" />
+        <AssociationConnector Association="FacilitiesModel.FK__PMVendorC__Custo__1B2A9A0D" />
+        <AssociationConnector Association="FacilitiesModel.FK__PMVendorC__PMVen__1C1EBE46" />
+        <EntityTypeShape EntityType="FacilitiesModel.CGSTheme" Width="1.5" PointX="6.375" PointY="7.75" />
+        <EntityTypeShape EntityType="FacilitiesModel.CGSColumn" Width="1.5" PointX="12.625" PointY="0.875" />
+        <EntityTypeShape EntityType="FacilitiesModel.CGSColumnType" Width="1.5" PointX="10.375" PointY="0.875" />
+        <EntityTypeShape EntityType="FacilitiesModel.ClientPMHeader" Width="1.5" PointX="7.5" PointY="24" />
+        <EntityTypeShape EntityType="FacilitiesModel.PMWorkOrderCreationDate" Width="1.5" PointX="9.75" PointY="40.75" />
+        <AssociationConnector Association="FacilitiesModel.FK__CGSColumn__CGSCo__77E15DD0" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientPMH__Creat__4614F812" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientPMH__Custo__4244672E" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientPMH__Probl__43388B67" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientPMH__Probl__442CAFA0" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientPMH__Reque__4520D3D9" />
+        <AssociationConnector Association="FacilitiesModel.FK__PMVendors__PMHea__48F164BD" />
+        <AssociationConnector Association="FacilitiesModel.FK__PMWorkOrd__Clien__50928685" />
+        <EntityTypeShape EntityType="FacilitiesModel.CGSThemeTemplate" Width="1.5" PointX="8.625" PointY="14.875" />
+        <AssociationConnector Association="FacilitiesModel.FK__CGSThemeT__Templ__71F37A50" />
+        <AssociationConnector Association="FacilitiesModel.FK__CGSThemeT__CGSTh__70FF5617" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientCus__Custo__6CA4B54E" />
+        <EntityTypeShape EntityType="FacilitiesModel.CGSThemeTemplateType" Width="1.5" PointX="15.375" PointY="0.875" />
+        <AssociationConnector Association="FacilitiesModel.FK_CGSThemeTemplates_CGSThemeTemplateTypes" />
+        <EntityTypeShape EntityType="FacilitiesModel.CGSThemeTemplateLogo" Width="1.5" PointX="0.75" PointY="28.125" />
+        <EntityTypeShape EntityType="FacilitiesModel.Client" Width="1.5" PointX="3" PointY="66.25" />
+        <AssociationConnector Association="FacilitiesModel.FK__Clients__Logo__615232DC" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientAct__Clien__7A87F4FA" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientCla__Clien__7C703D6C" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientCus__Clien__7D6461A5" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientIns__Clien__7F4CAA17" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientPMH__Clien__2BEA4664" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientPro__Clien__0040CE50" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientPro__Clien__0134F289" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientRes__Clien__0505836D" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientSer__Clien__09CA388A" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientSer__Clien__0CA6A535" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientSer__Clien__0E8EEDA7" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientSer__Clien__0F8311E0" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientSer__Clien__10773619" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientSer__Clien__116B5A52" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientUse__Clien__125F7E8B" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientVen__Clien__1A00A053" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientWor__Clien__1DD13137" />
+        <AssociationConnector Association="FacilitiesModel.FK__ClientWor__Clien__1FB979A9" />
+        <AssociationConnector Association="FacilitiesModel.FK__InvoiceSt__Clien__2A37081C" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Clien__32CC4E1D" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Clien__3C55B857" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Clien__43F6DA1F" />
+        <AssociationConnector Association="FacilitiesModel.FK__ServiceRe__Clien__47C76B03" />
+        <AssociationConnector Association="FacilitiesModel.FK__Statuses__Client__5244F976" />
+        <AssociationConnector Association="FacilitiesModel.FK__WorkOrder__Clien__58F1F705" />
+        <AssociationConnector Association="FacilitiesModel.FK__WorkOrder__Clien__5DB6AC22" />
+        <AssociationConnector Association="FacilitiesModel.FK__WorkOrder__Clien__61873D06" />
+        <AssociationConnector Association="FacilitiesModel.FK__WorkOrder__Clien__68343A95" />
+        <EntityTypeShape EntityType="FacilitiesModel.PMTestTable" Width="1.5" PointX="0.75" PointY="8.75" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
